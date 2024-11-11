@@ -1,0 +1,21 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal website of Aran Ogaki showcasing background, skills, education, portfolio, and contact information.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "personal",
+    "website",
+    "portfolio",
+    "Aran Ogaki"
+  ],
+  "author": "Aran Ogaki",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
