@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aran Ogaki - Personal Website</title>
+    <meta name="description" content="Welcome to Aran Ogaki's personal website. Explore his background, skills, education, portfolio, and contact information.">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Aran Ogaki - Personal Website">
+    <meta property="og:description" content="Explore the personal website of Aran Ogaki, showcasing his background, skills, education, and portfolio.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <img src="Images/S__7249922.jpg" alt="Aran Ogaki" class="profile-photo">
+                <h1>Aran Ogaki</h1>
+            </div>
+            <div class="header-right">
+                <div class="language-switcher" aria-label="Language Switcher">
+                    <button id="en-btn" aria-label="Switch to English">English</button>
+                    <button id="ja-btn" aria-label="日本語に切り替え">日本語</button>
+                </div>
+                <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="#home" data-lang-key="home">Home</a></li>
+                        <li><a href="#about" data-lang-key="about">About Me</a></li>
+                        <li><a href="#skills" data-lang-key="skills">Skills</a></li>
+                        <li><a href="#education" data-lang-key="education">Education</a></li>
+                        <li><a href="#portfolio" data-lang-key="portfolio">Portfolio</a></li>
+                        <li><a href="#contact" data-lang-key="contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2 data-lang-key="background">Background</h2>
+            <!-- English Content -->
+            <div class="lang en">
+                <p>Born on April 9, 2000, in Kobe City, Hyogo Prefecture.</p>
+                <p>April 2013: Started judo upon entering middle school.</p>
+                <p>April 2016: Joined the judo club of a high school known for producing Olympic athletes.</p>
+                <p>August 2018: Began studying seriously for the first time after my last judo match.</p>
+                <p>April 2020: Took a gap year but was admitted to Meiji University, a prestigious university in Japan.</p>
+                <p>August 2021: Pursued my dream of studying in the U.S.; left Meiji University and enrolled at Orange Coast College in California.</p>
+                <p>September 2023: Transferred to Knox College to start studying Computer Science.</p>
+                <p>To be continued.</p>
+            </div>
+            <!-- Japanese Content -->
+            <div class="lang ja" style="display: none;">
+                <p>2000年4月9日、兵庫県神戸市にて誕生。</p>
+                <p>2013年4月：中学校に入学し柔道を始める。</p>
+                <p>2016年4月：オリンピック選手を輩出する高校の柔道部に入部。</p>
+                <p>2018年8月：最後の試合が終わった後、初めて本格的に勉強を始める。</p>
+                <p>2020年4月：一年のギャップイヤーを経て、日本の名門大学である明治大学に合格・入学。</p>
+                <p>2021年8月：諦めきれなかったアメリカ留学の夢を追い、明治大学を退学しカリフォルニア州のOrange Coast Collegeに入学。</p>
+                <p>2023年9月：Knox Collegeに編入し、コンピュータサイエンスを学び始める。</p>
+                <p>今に至る。</p>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about">
+            <h2 data-lang-key="about_me">About Me</h2>
+            <!-- English Content -->
+            <div class="lang en">
+                <p>I aim to build a career as a software engineer while also engaging in cryptocurrency, aspiring to retire by the age of 40 and enjoy a leisurely life with my family.</p>
+            </div>
+            <!-- Japanese Content -->
+            <div class="lang ja" style="display: none;">
+                <p>ソフトウェアエンジニアとしてのキャリアを積みながら仮想通貨にも取り組み、40歳までにリタイアして家族と悠々自適な生活を送りたいと考えています。</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 data-lang-key="skills">Skills</h2>
+            <h3 data-lang-key="technical_skills">Technical Skills</h3>
+            <ul>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Haskell</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Git</li>
+                <li>Docker</li>
+            </ul>
+            <h3 data-lang-key="languages">Languages</h3>
+            <ul>
+                <li>Japanese</li>
+                <li>English</li>
+            </ul>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2 data-lang-key="education">Education</h2>
+            <!-- English Content -->
+            <div class="lang en">
+                <p>Knox College, B.S. in Computer Science, Expected Graduation: 2025</p>
+            </div>
+            <!-- Japanese Content -->
+            <div class="lang ja" style="display: none;">
+                <p>Knox College、コンピュータサイエンス学士、2025年卒業予定</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2 data-lang-key="portfolio">Portfolio</h2>
+            <p data-lang-key="portfolio_message">I will be showcasing many of my projects here in the future. I am growing.</p>
+            <!-- Future Portfolio Items Can Be Added Here -->
+            <div class="portfolio-container">
+                <!-- Example Portfolio Item -->
+                <div class="portfolio-item">
+                    <img src="i=Images/S__7249922.jpg" alt="Project 1">
+                    <h4>Project Title</h4>
+                    <p>Brief description of the project.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <!-- Add more portfolio items as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 data-lang-key="contact">Contact</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:arogaki@knox.edu">arogaki@knox.edu</a></p>
+                <p data-lang-key="address">Address: Teke House 202</p>
+                <h3 data-lang-key="social_media">Social Media</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/aran-ogaki-45a602251/" target="_blank" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/aran_gain/" target="_blank" aria-label="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+            <form id="contact-form" aria-label="Contact Form">
+                <label for="name" data-lang-key="name_label">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true" aria-label="Name">
+
+                <label for="email" data-lang-key="email_label">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true" aria-label="Email">
+
+                <label for="message" data-lang-key="message_label">Message:</label>
+                <textarea id="message" name="message" required aria-required="true" aria-label="Message"></textarea>
+
+                <button type="submit" data-lang-key="send_button">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aran Ogaki</p>
+    </footer>
+</body>
+</html>
